@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.InjectionDialogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.android.dia.views.PoppinsBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/units"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <com.android.dia.views.PoppinsRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero_units"
+            android:textColor="@color/white"
+            android:id="@+id/units_text_view"
+            android:textSize="20sp"/>
+
+        <com.android.dia.views.PoppinsBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/correction"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <com.android.dia.views.PoppinsRegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero_units"
+            android:textColor="@color/white"
+            android:id="@+id/correction_text_view"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:src="@drawable/abs_right_down"
+            android:background="@drawable/non_selected_type"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/injection_image_view"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/reload"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/reload_btn"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/next"
+                android:layout_marginStart="10dp"
+                android:id="@+id/next_btn"/>
+        </LinearLayout>
+
+        <com.android.dia.views.PoppinsBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/submit_btn"/>
+    </LinearLayout>
+    <com.android.dia.views.PoppinsBoldTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="aaaaaaaaaaaaaaaa"
+        android:visibility="invisible"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"/>
+
+</FrameLayout>
+

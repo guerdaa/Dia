@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.HelpDialogFragment">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/help_illustration"
+        android:layout_marginEnd="-50dp"
+        android:layout_below="@id/correction_text_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-40dp"/>
+
+    <com.android.dia.views.PoppinsBoldTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:text="Help"
+        android:id="@+id/help_text_view"
+        android:layout_marginTop="50dp"/>
+
+    <com.android.dia.views.PoppinsRegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/help_text_view"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="15sp"
+        android:id="@+id/factor_text_view"
+        android:textColor="@color/white"
+        android:text="@string/factor_help"/>
+
+    <com.android.dia.views.PoppinsRegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/factor_text_view"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:id="@+id/correction_text_view"
+        android:text="@string/correction_help"/>
+
+
+</RelativeLayout>

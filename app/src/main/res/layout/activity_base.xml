@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseActivity">
+
+   <ImageView
+       android:layout_width="200dp"
+       android:layout_height="70dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginTop="10dp"
+       android:id="@+id/title"
+       android:scaleType="fitEnd"
+       android:src="@drawable/title"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:background="@color/grey"
+        android:layout_above="@id/fragment_tag"
+        android:id="@+id/view_pager"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:id="@+id/ic_settings"
+            android:src="@drawable/ic_settings"
+            android:tint="@color/colorPrimaryDark"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:id="@+id/ic_measures"
+            android:src="@drawable/ic_measures"
+            android:tint="@color/colorPrimaryDark"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:id="@+id/ic_add_measure"
+            android:src="@drawable/ic_add_measure"
+            android:tint="@color/colorPrimaryDark"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:id="@+id/ic_search_food"
+            android:src="@drawable/ic_search_food"
+            android:tint="@color/colorPrimaryDark"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:id="@+id/ic_add_food"
+            android:src="@drawable/ic_add_food"
+            android:tint="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <com.android.dia.views.PoppinsRegularTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/fragment_tag"
+        android:layout_above="@id/toolbar"
+        android:gravity="center"
+        android:text="@string/settings"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentEnd="true"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/fragment_tag"
+        android:background="@color/colorPrimaryDark"/>
+</RelativeLayout>
